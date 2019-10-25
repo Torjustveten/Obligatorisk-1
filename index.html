@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!--Custom font from google-->
+    <title>Universe Today</title>
+    <link rel="icon" href="img/icon.png" type="image/icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="Top-text">Universe Today</h1>
+            <h2 id="Buttom-text">The Latest News In Science And Space Exploration</h2>
+        </div>
+        <div class="footer">
+            <a href="https://github.com/Torjustveten/Oppgave-1">
+                <p id="footer-text">Github Project Link</p>
+            </a> </div>
+        <div class="content">
+
+            <div class="dropdown">
+                <button onclick="show_hide()" class="dropbutton">Meny</button>
+                <div style="display:none;" id="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="gallery.html">Gallery</a>
+
+                </div>
+            </div>
+
+            <article>
+
+                <a href="articleone.html">
+                    <h1 id="article-title">Achinaut One Plans To Assemble Its Own Solar Panels In
+                        Space</h1>
+                    <img id="article-images" src="img/Achinaut2.jpg">
+                </a>
+
+                <p id="under-text">Humanity is in a bit of a transition period, a time when it makes sense to
+                    launch
+                    material up and out
+                    of Earth’s gravity well into orbit, and beyond. But it’s really expensive, costing up to
+                    $10,000 per
+                    pound you want in orbit, and 10 times if you want it on the Moon.
+
+                    But over the coming decades, more and more of our space-based infrastructure will be built
+                    in space,
+                    manufactured out of materials that were mined in space.</p>
+                <p id="author"><strong>Published:</strong> October 1 2019</p><br />
+
+
+                <a href="articletwo.html">
+                    <h1 id="article-title">What Will It Take To Feed A Million People On Mars?</h1>
+                    <img id="article-images" src="img/mars_vegetation.jpg">
+                </a>
+
+                <p id="under-text">In 2017, Elon Musk laid out his grand sweeping plans for the future of SpaceX, the
+                    company that would take humanity to Mars. Over decades, tens of thousands of Starship flights would
+                    carry a million human beings to the surface of the Red Planet, the minimum Musk expects it’ll take
+                    to create a self-sustaining civilization.</p>
+                <p id="author"><strong>Published:</strong> October 1 2019</p><br />
+            </article>
+
+
+            <p id="time"></p>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        var dateFormat = require('dateformat');
+        var now = new Date();
+        dateFormat(now, "dddd, mmmm dS, yyyy, h:MM:ss TT");
+
+        function show_hide() {
+            var click = document.getElementById("dropdown-content")
+            if (click.style.display === "none") {
+                click.style.display = "block";
+            } else {
+                click.style.display = "none";
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>

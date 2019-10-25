@@ -1,0 +1,125 @@
+html, body{
+    background-color:whitesmoke;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 320px auto 40px;
+    grid-template-areas: 
+        "h h h h h h h h h h h h"
+        "c c c c c c c c c c c c"
+        "f f f f f f f f f f f f";
+  }
+  
+  .header {
+    grid-area: h;
+  }
+  
+  .content {
+    grid-area: c;
+  }
+  
+  .footer {
+    grid-area: f;
+    background-color: #1c1c1c;
+  }
+
+  .container > div:nth-child(1){
+    background-image: url(img/new-horizon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#Top-text{
+    font-size: 5em;
+    font-family: "Oswald", sans-serif;
+    text-align:center;
+    color:whitesmoke;
+    height:20px;
+    margin-top:100px;
+}
+
+#Buttom-text {
+    margin-top: 100px;
+    font-family: "Oswald", sans-serif;
+    font-size: 27px;
+    text-align: center;
+    font-weight: 400;
+    color:whitesmoke;
+
+}
+
+.dropbutton {
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    font-family: "sans-serif";
+    font-weight: bold;
+    
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#dropdown-content{
+    position: absolute;
+    background-color:black;
+    min-width:70px;
+    font-size: 20px;
+    font-family: "sans-serif";
+    text-align:center;
+    line-height: 200%;
+    z-index:1;
+}
+
+.dropdown-content a {
+display: block;
+color: white;
+padding: 12px 16px;
+margin:10px;
+text-decoration: none;
+
+}
+
+
+#dropdown-content a:hover{
+    background-color:#ddd;
+    display:inline-block;
+}
+
+a {
+    color:white;
+    text-decoration:none;
+}
+     
+#time {
+    text-align: center;
+    padding-top: 30px;
+    color:darkslategray;
+} 
+
+#article-title {
+    position: relative;
+    padding: 10px;
+    font-size: 40px;
+    font-family: sans-serif;
+    color:black;
+    text-decoration: none;
+    text-align: center;
+}
+
+#picture {
+    display: block;
+    margin-top:10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    align-content: center;
+}

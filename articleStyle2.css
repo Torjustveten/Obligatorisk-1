@@ -1,0 +1,139 @@
+body, html {
+    background-color:whitesmoke;
+    padding: 10px;
+    box-sizing:border-box;
+    height:100%
+}
+p {
+    text-align: left;
+    font-weight: lighter;
+    font-family: 'Roboto';
+    margin-left:270px;
+    margin-right:270px;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+}
+
+#picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    align-content: center;
+}
+
+.container > div:nth-child(1){
+    background-image: url(img/mars_vegetation.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+#top-text{
+    font-size: 3em;
+    font-family: "Oswald", sans-serif;
+    text-align:center;
+    color:whitesmoke;
+    height:20px;
+    margin-top:100px;
+}
+
+#credit {
+    text-align:center;
+    font-size:10px;
+}
+
+    
+
+    .container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 320px auto 40px;
+        grid-template-areas: 
+            "h h h h h h h h h h h h"
+            "c c c c c c c c c c c c"
+            "f f f f f f f f f f f f";
+      }
+      
+    .header {
+        grid-area: h;
+      }
+      
+    .content {
+        grid-area: c;
+      }
+      
+    .footer {
+        grid-area: f;
+        background-color: #1c1c1c;
+      }
+
+    
+
+    body::-webkit-scrollbar {
+        width: 1em;
+    }
+    
+    body::-webkit-scrollbar-thumb {
+      background-color: darkgrey;
+      outline: 1px solid #cacfd9;
+    }
+
+    .dropbutton {
+        background-color: #000;
+        color: white;
+        padding: 20px;
+        font-size: 16px;
+        font-family: "sans-serif";
+        font-weight: bold;
+        
+    }
+
+    .dropdown {
+        position: relative;
+        display: block;
+    }
+
+    #dropdown-content{
+        position: absolute;
+        background-color:black;
+        min-width:70px;
+        font-size: 20px;
+        font-family: "sans-serif";
+        text-align:center;
+        line-height: 200%;
+        z-index:1;
+    }
+
+    .dropdown-content a {
+    display: block;
+    color: white;
+    padding: 12px 16px;
+    margin:10px;
+    text-decoration: none;
+    
+    }
+
+    
+   #dropdown-content a:hover{
+        background-color:#ddd;
+        display:inline-block;
+    }
+
+    a {
+        color:white;
+        text-decoration:none;
+    }
+         
+    #time {
+        text-align: center;
+        padding-top: 30px;
+        color:darkslategray;
+   } 
+

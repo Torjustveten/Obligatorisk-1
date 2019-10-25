@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="gallerystyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!--Custom font from google-->
+    <title>Universe Today</title>
+    <link rel="icon" href="img/icon.png" type="image/icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="Top-text">Space Gallery</h1>
+            <h2 id="Buttom-text">The Most Iconic Photographs In Space</h2>
+        </div>
+        <div class="content">
+
+            <div class="dropdown">
+                <button onclick="show_hide()" class="dropbutton">Meny</button>
+                <div style="display:none;" id="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="gallery.html">Gallery</a>
+
+                </div>
+            </div>
+
+            <p id="article-title">New Horizon At Pluto</p>
+            <img id="picture" src="img/horizon1.png">
+            <img id="picture" src="img/horizon2.png">
+            <img id="picture" src="img/horizon3.png">
+
+            <p id="article-title">Juno Jupiter Mission</p>
+            <img id="picture" src="img/Jupiter1.jpg">
+            <img id="picture" src="img/Jupiter2.jpg">
+            <img id="picture" src="img/Jupiter3.jpg">
+            <img id="picture" src="img/Jupiter4.jpg">
+            <img id="picture" src="img/Jupiter5.jpg">
+
+
+
+            <script>
+                var dateFormat = require('dateformat');
+                var now = new Date();
+                dateFormat(now, "dddd, mmmm dS, yyyy, h:MM:ss TT");
+
+                function show_hide() {
+                    var click = document.getElementById("dropdown-content")
+                    if (click.style.display === "none") {
+                        click.style.display = "block";
+                    } else {
+                        click.style.display = "none";
+                    }
+                }
+
+
+            </script>
+</body>
+
+</html>
