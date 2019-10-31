@@ -37,7 +37,7 @@
                 <a href="articleone.html">
                     <h1 id="article-title">Achinaut One Plans To Assemble Its Own Solar Panels In
                         Space</h1>
-                    <img id="article-images" src="img/Achinaut2.jpg">
+                    <img id="article-images" src="img/Achinaut3.jpg">
                 </a>
 
                 <p id="under-text">Humanity is in a bit of a transition period, a time when it makes sense to
@@ -50,7 +50,7 @@
                     But over the coming decades, more and more of our space-based infrastructure will be built
                     in space,
                     manufactured out of materials that were mined in space.</p>
-                <p id="author"><strong>Published:</strong> October 11 2019</p><br />
+                <p id="PBdate2"></p>
 
 
                 <a href="articletwo.html">
@@ -62,7 +62,7 @@
                     company that would take humanity to Mars. Over decades, tens of thousands of Starship flights would
                     carry a million human beings to the surface of the Red Planet, the minimum Musk expects it’ll take
                     to create a self-sustaining civilization.</p>
-                <p id="author"><strong>Published:</strong> October 1 2019</p><br />
+                <p id="PBdate"></p>
             </article>
 
 
@@ -74,9 +74,13 @@
 
 
     <script>
-        var dateFormat = require('dateformat');
-        var now = new Date();
-        dateFormat(now, "dddd, mmmm dS, yyyy, h:MM:ss TT");
+
+        var date = new Date(2019, 9, 1);
+            document.getElementById("PBdate").innerHTML = date.toDateString();
+
+        var date = new Date(2019, 9, 11);
+            document.getElementById("PBdate2").innerHTML = date.toDateString();
+        
 
         function show_hide() {
             var click = document.getElementById("dropdown-content")
